@@ -1,0 +1,13 @@
+dependencies:
+  override:
+    - echo "building software"
+
+test:
+  override:
+    - echo "testing software"
+
+deployment:
+  release:
+    tag: /v[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/
+    commands:
+      - echo "starting release process"
